@@ -1,0 +1,10 @@
+[tool.black]
+line-length = 80
+
+[tool.isort]
+profile = "black"
+
+# We can skip isort adding the
+# skip-isort tag to a jupyter cell
+[tool.nbqa.skip_celltags]
+isort = ["skip-isort"]
